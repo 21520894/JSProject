@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon --exec babel-node src/index.js"
 	},
 	"repository": {
 		"type": "git",
@@ -18,8 +19,16 @@
 	"homepage": "https://github.com/21520894/JSProject#readme",
 	"dependencies": {
 		"body-parser": "^1.20.3",
+		"dotenv": "^16.4.5",
 		"ejs": "^3.1.10",
 		"express": "^4.21.0",
-		"nodemon": "^3.1.6"
+		"nodemon": "^3.1.6",
+		"sequelize": "^6.37.3"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.25.2",
+		"@babel/node": "^7.25.0",
+		"@babel/preset-env": "^7.25.4",
+		"sequelize-cli": "^6.6.2"
 	}
 }
